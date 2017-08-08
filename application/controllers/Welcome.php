@@ -21,4 +21,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('includes/blank');
 		$this->load->view('includes/footer');
 	}
+	
+	public function entrar()
+	{
+		//$this->load->view('includes/head');
+		//$this->load->view('includes/nav');
+	    //$this->load->view('includes/menu');
+		$this->load->view('conta/entrar');
+		//$this->load->view('includes/footer');
+	}
 }
