@@ -30,4 +30,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('conta/entrar');
 		//$this->load->view('includes/footer');
 	}
+	
+	public function salas()
+	{
+		$this->load->view('includes/head');
+		$this->load->view('includes/nav');
+	    $this->load->view('includes/menu');
+		$this->load->view('salas');
+		$this->load->view('includes/footer');
+	}
 }

@@ -23,6 +23,10 @@
     <label for="usuario">Usuario</label>
     <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuário" value="<?php echo set_value('usuario')?>">
   </div>
+  <div class="form-group">
+    <label for="usuario">Nome completo</label>
+    <input type="text" name="nome" class="form-control" id="usuario" placeholder="Nome Completo" value="<?php echo set_value('nome')?>">
+  </div>
   
   <div class="form-group">
     <label for="email">Endereço de e-mail</label>
