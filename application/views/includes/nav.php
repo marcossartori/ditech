@@ -1,3 +1,12 @@
+  <?php 
+  
+   if($this->session->userdata('logado')==false){
+	  redirect('conta/entrar');
+	  
+	  }
+  
+  ?>
+  
    <div id="wrapper">
 
         <!-- Navigation -->
@@ -17,7 +26,7 @@
              
                
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $this->session->userdata('usuario');?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>

@@ -8,10 +8,10 @@
                         <a href="<?php echo base_url()."welcome/salas" ?>"><i class="fa fa-fw fa-bar-chart-o"></i> Cadastrar salas</a>
                     </li>
                     <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Edição de dados</a>
+                        <a href="<?php echo base_url()."cadastro_usuario/listar_usuario" ?>"><i class="fa fa-fw fa-table"></i> Gerenciar usuarios</a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                        <a href="<?php echo base_url()."welcome/editar_salas" ?>"><i class="fa fa-fw fa-edit"></i> Gerenciar Salas</a>
                     </li>
                     <li>
                         <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>

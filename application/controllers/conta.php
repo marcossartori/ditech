@@ -31,15 +31,17 @@ class Conta extends CI_Controller {
 				$usuario=$login_existe;
 				//configurar dados da sessao
 				$session = array(
-                 'email'     => $usuario['email'],
-				 'created'     => $usuario['created'],
-                 'logado' => TRUE
+				'usuario'     => $usuario['usuario'],
+			    'nome'        => $usuario['nome'],
+                'email'       => $usuario['email'],
+				'created'     => $usuario['created'],
+                'logado' => TRUE
                );
           //inicializa sessao
           $this->session->set_userdata($session);
 		  		
 				//iniciar sessao e redirecionar para area restrita
-				redirect('welcome');
+				redirect('welcome/editar_salas');
 			}
 			else
 			{
@@ -62,7 +64,7 @@ class Conta extends CI_Controller {
 		 "alerta"=>$alerta
 		);	 
 		
-		$this->load->view('conta/entrar',$dados);
+		   $this->load->view('conta/entrar',$dados);
 		
 			}
 			
