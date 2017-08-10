@@ -11,7 +11,7 @@
                         <a href="<?php echo base_url()."cadastro_usuario/listar_usuario" ?>"><i class="fa fa-fw fa-table"></i> Gerenciar usuarios</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url()."welcome/editar_salas" ?>"><i class="fa fa-fw fa-edit"></i> Gerenciar Salas</a>
+                        <a href="<?php echo base_url()."cadastro_salas/listar_salas" ?>"><i class="fa fa-fw fa-edit"></i> Gerenciar Salas</a>
                     </li>
                     <li>
                         <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>

@@ -19,29 +19,21 @@
   <input type="hidden" name="captcha" >
   
   <div class="form-group">
-    <label for="usuario">Usuario</label>
-    <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuário" value="<?php echo set_value('usuario');?>">
+    <label for="usuario">Numero Da Sala</label>
+    <input type="number" name="numero" class="form-control" id="numero" placeholder="Numero" value="<?php echo set_value('numero');?>">
   </div>
   
   <div class="form-group">
-    <label for="email">Endereço de e-mail</label>
-    <input type="email" name="email" class="form-control" id="email" placeholder="Email" value="<?php  echo set_value('email')?>">
+    <label for="email">Nome do predio</label>
+    <input type="text" name="predio" class="form-control" id="predio" placeholder="Predio" value="<?php  echo set_value('predio')?>">
   </div>
   
     <div class="form-group">
-    <label for="email">Setor</label>
-    <input type="text" name="setor" class="form-control" id="setor" placeholder="setor" value="<?php  echo set_value('setor')?>">
+    <label for="email">Nome da sala</label>
+    <input type="text" name="nome" class="form-control" id="nome" placeholder="nome" value="<?php  echo set_value('nome')?>">
   </div>
   
-  <div class="form-group">
-    <label for="senha">Senha</label>
-    <input type="password" name="senha" class="form-control" id="senha" placeholder="senha" value="<?php echo set_value('senha')?>">
-  </div>
   
-  <div class="form-group">
-    <label for="confisenha">Confirmar Senha</label>
-    <input type="password" name="confisenha" class="form-control" id="confisenha" placeholder="Confirmar Senha" >
-  </div>
   
   <button type="submit" name="salvar" value="salvar" class="btn btn-success pull-right">Salvar</button>
 </form>
