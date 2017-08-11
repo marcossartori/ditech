@@ -31,6 +31,7 @@ class Conta extends CI_Controller {
 				$usuario=$login_existe;
 				//configurar dados da sessao
 				$session = array(
+				'id'     => $usuario['id'],
 				'usuario'     => $usuario['usuario'],
 			    'nome'        => $usuario['nome'],
                 'email'       => $usuario['email'],
@@ -41,7 +42,7 @@ class Conta extends CI_Controller {
           $this->session->set_userdata($session);
 		  		
 				//iniciar sessao e redirecionar para area restrita
-				redirect('welcome/editar_salas');
+				redirect('welcome/branco');
 			}
 			else
 			{

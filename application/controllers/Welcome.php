@@ -57,4 +57,21 @@ class Welcome extends CI_Controller {
 		$this->load->view('listar_salas');
 		$this->load->view('includes/footer');
 	}
+	public function reservas()
+	{
+		$this->load->view('includes/head');
+		$this->load->view('includes/nav');
+	    $this->load->view('includes/menu');
+		$this->load->view('reservas');
+		$this->load->view('includes/footer');
+	}
+	
+	public function FiltroReserva()
+	{
+		$this->load->view('includes/head');
+		$this->load->view('includes/nav');
+	    $this->load->view('includes/menu');
+		$this->load->view('Reservas');
+		$this->load->view('includes/footer');
+	}
 }

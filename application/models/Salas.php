@@ -50,7 +50,7 @@ class  Salas extends CI_Model {
 		function editarSalas($id) {
         $this->db->where('idsalas', $id);
         return $this->db->get('salas')->result();
-}
+     }
 function alterar($data) {
     $this->db->where('idsalas', $data['idsalas']);
     $this->db->set($data);

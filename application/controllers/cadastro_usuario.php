@@ -109,6 +109,7 @@
                $this->load->view('includes/nav');
                $this->load->view('includes/menu');
                $this->load->view('alterarUsuario',$data);
+			   $this->load->view('includes/footer');
              }
 			 
 			 
@@ -168,11 +169,9 @@
                "alerta"=>$alerta
               );	 
               
-              $this->load->view('includes/head');
-              $this->load->view('includes/nav');
-              $this->load->view('includes/menu');
-              $this->load->view('cadastro_usuario/listar_usuario');
-              $this->load->view('includes/footer');			
+           
+              redirect(base_url().'welcome/branco');
+             		
                       
               }
                       
